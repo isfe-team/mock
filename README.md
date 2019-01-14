@@ -2,6 +2,8 @@
 
 > Platform: windows.
 
+> you can see easy mock in [github](https://github.com/easy-mock/easy-mock) & see how they use [here](https://juejin.im/post/59a8f15ef265da246c4a3822#heading-6)
+
 ## Requirements
 
 - `node.js >= 8.9`
@@ -10,7 +12,7 @@
 
 > 建议 Easy Mock 以及 MongoDB、Redis 尽量将其安装在一个目录中。
 
-## 安装 Redis  
+## 安装 
 
 1. 在[官网](https://github.com/MicrosoftArchive/redis/releases)下载安装包并解压
 

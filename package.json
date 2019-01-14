@@ -1,0 +1,24 @@
+{
+  "name": "mock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/merge.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "schema": "quicktype -s ts ./types/index.ts -l schema -o schemas.json",
+    "schemax": "typescript-json-schema ./types/index.ts \"*\" -o schemas.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "json-schema-to-openapi-schema": "^0.3.0",
+    "typescript-json-schema": "^0.34.0"
+  },
+  "dependencies": {
+    "commander": "^2.19.0"
+  }
+}
