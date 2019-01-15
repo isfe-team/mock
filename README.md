@@ -75,4 +75,4 @@ module.exports = {
 
 > 安装成功后输入的 `host` 不是本机 `ip`，而是固定的127.0.0.1，`port` 为安装时定义的，默认是14147,连接失败原因可能是 `host` 或 `port` 输入有误，或者服务未启动，需手动启动，直接在控制面板的服务内找到对应的 `filezilla server` 手动启动即可
 
-3. 在 `filezilla server` 新建用户名和密码，在 `filezilla client` 中连接使用，直接解压 `filezilla client` 的压缩包，双击 `filezilla.exe`，连接时除了用户名和密码还需输入主机(本机的`ip`), `port` 默认值是21
+3. 在 `filezilla server` 新建用户名和密码，在 `filezilla client` 中连接使用，直接解压 `filezilla client` 的压缩包，双击 `filezilla.exe`，连接时除了用户名和密码还需输入主机(服务器的`ip`), `port` 默认值是21，现在有很多是22，使用时需注意
