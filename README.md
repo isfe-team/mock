@@ -4,6 +4,8 @@
 
 > you can see easy mock in [github](https://github.com/easy-mock/easy-mock) & see how they use [here](https://juejin.im/post/59a8f15ef265da246c4a3822#heading-6)
 
+> Rel: https://www.processon.com/diagraming/5b83bc87e4b08faf8c36c2dc
+
 ## Requirements
 
 - `node.js >= 8.9`
@@ -35,7 +37,7 @@ logpath=E:\mock\mongodb\data\log\mongodb.log
 
 注意此时需要保证相关路径准确。
 
-3. 所有文件新建完成，在 `bin` 目录下执行命令 `mongod.exe` 启动服务，然后可以使用 `mongo.exe` 进行测试连接。
+3. 所有文件新建完成，在 `bin` 目录下执行命令 `mongod.exe --config ..\mongodb.cfg` 启动服务，然后可以使用 `mongo.exe` 进行测试连接。
 
 ## 安装 Easy Mock
 

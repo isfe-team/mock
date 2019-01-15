@@ -5,7 +5,6 @@ const package = require('../package.json')
 // @see https://github.com/YousefED/typescript-json-schema
 const TJS = require('typescript-json-schema')
 
-// now, no options
 commander
   .usage('-s <source-path> -c <config-path> -o <output-path>')
   .version(package.version)

@@ -7,18 +7,14 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "schema": "quicktype -s ts ./types/index.ts -l schema -o schemas.json",
-    "schemax": "typescript-json-schema ./types/index.ts \"*\" -o schemas.json"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "json-schema-to-openapi-schema": "^0.3.0",
-    "typescript-json-schema": "^0.34.0"
-  },
+  "devDependencies": { },
   "dependencies": {
-    "commander": "^2.19.0"
+    "commander": "^2.19.0",
+    "typescript-json-schema": "^0.34.0"
   }
 }

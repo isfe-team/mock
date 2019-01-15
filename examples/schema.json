@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "IResponeResultStatus": {
+      "enum": [
+        0,
+        1
+      ],
+      "type": "number"
+    },
+    "IResponseResult": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/IResponeResultStatus"
+        },
+        "message": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/T"
+        }
+      }
+    },
+    "User": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "number"
+        },
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        }
+      }
+    },
+    "UserResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/IResponeResultStatus"
+        },
+        "message": {
+          "type": "string"
+        },
+        "data": {
+          "$ref": "#/definitions/User"
+        }
+      }
+    },
+    "UsersResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/IResponeResultStatus"
+        },
+        "message": {
+          "type": "string"
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/User"
+          }
+        }
+      }
+    },
+    "ErrorResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/IResponeResultStatus"
+        },
+        "message": {
+          "type": "string"
+        },
+        "data": {
+          "type": "null"
+        }
+      }
+    },
+    "HelloWorldResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/IResponeResultStatus"
+        },
+        "message": {
+          "type": "string"
+        },
+        "data": {
+          "type": "string",
+          "enum": [
+            "Hello"
+          ]
+        }
+      }
+    },
+    "T": {
+      "type": "object"
+    }
+  }
+}
