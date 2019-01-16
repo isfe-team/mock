@@ -65,6 +65,24 @@ types！！
 
 所以我们有了 `bin/merge.js` 和 `bin/ts-to-schemas.js`，还有 `Easy Mock`。
 
+且总共支持以下特性：
+
+- ts 和 请求定义 生成 `swagger.json`
+- 下面是 Easy Mock 支持的[特性](https://github.com/easy-mock/easy-mock/blob/dev/README.zh-CN.md#%E7%89%B9%E6%80%A7)
+  - 支持接口代理
+  - 支持快捷键操作
+  - 支持协同编辑
+  - 支持团队项目
+  - 支持 RESTful
+  - 支持 Swagger | OpenAPI Specification (1.2 & 2.0 & 3.0)
+    - 基于 Swagger 快速创建项目
+    - 支持显示接口入参与返回值
+    - 支持显示实体类
+  - 支持灵活性与扩展性更高的响应式数据开发
+  - 支持自定义响应配置（例：status/headers/cookies）
+  - 支持 Mock.js 语法
+  - 支持 restc 方式的接口预览
+
 ## TODOs
 
 - 思考如何结合 `types` 生成的 `schema` 和 `占位符`
