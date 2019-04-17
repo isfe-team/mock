@@ -132,7 +132,7 @@ logpath=E:\mock\mongodb\data\log\mongodb.log
 $ git clone https://github.com/easy-mock/easy-mock.git
 $ cd easy-mock
 $ npm i
-$ npm i -g pm2^2.10.4 # >= 2.5.z，不要用 3.0 之后的版本
+$ npm i -g pm2^2.10.4 # >= 2.5.z，不要用 3.0 之后的版本 @see https://github.com/Unitech/pm2/issues/4128
 $ echo ... > pm2.config.js # pm2 配置文件
 $ pm2 start pm2.config.js --env production
 ```
